@@ -76,8 +76,12 @@ h1{
 
 /* ****** Mobile Navigation Submenu ******  */
 
-#reports, #mobileabout, #mobilecont{
+/* #reports, #mobileabout, #mobilecont{
   position:fixed;
+} */
+
+.submenu li a{
+  margin-left: 0.5em;
 }
 
 #mobileRep ul li:hover, #mobileAbt ul li:hover, #mobileContact ul li:hover{
@@ -85,24 +89,23 @@ h1{
 }
 
 #reports, #mobileabout, #mobilecont{
-  left: 0.9em;
-  width: 74%;
+  margin-left: 1.2em;
+  width: 103.2%;
 }
 
 /* Reports */
 
 #reports{
-  top: 9.95em;
+    padding-top: 2em;
 }
-
 /* About */
 #mobileabout{
-  top: 18.75em;
+    padding-top: 2em;
 }
 
 /* Contact */
 #mobilecont{
-  top: 20.95em;
+  padding-top: 1.8em;
 }
 
 
