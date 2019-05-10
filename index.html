@@ -17,6 +17,16 @@
         	<h1>Cycle News Hour</h1>
         </header>
 
+        <section id="open">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        </section>
+
+      <section id="close">
+      <div class="hamburger"><p>x</p></div>
+      </section>
+
 <!-- Navigation Mobile Design -->
       <nav id="mobileNav">
         <ul>
@@ -107,35 +117,52 @@
             </ul>
         </nav>
 </div>
+<section>
+<article id="topnews">
+  <h2>Top News</h2>
+  <div class="top-img"></div>
+</article>
+</section>
 </div>
 
 <main>
 <!-- Trending News -->
-<section id="tablet">
 <section id="trending">
   <h2>Trending</h2>
   <article>
-    <img src="images/placeholder.png" alt="image" width="400" height="300" class="shrink">
-    <h3>Article Title</h3>
-    <h4>Author</h4>
-    <time datetime="2018-05-22 20:00">Date</time>
+    <section>
+    <div class="trend-img"></div>
+    </section>
+  <section class="tablet">
+    <h4 class="category"><a>CATEGORY</a></h4>
+    <h3><a href="#">Article Title</a></h3>
+    <h4 class="author">Author</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</section>
   </article>
 
   <article>
-    <img src="images/placeholder.png" alt="image" width="400" height="300" class="shrink">
-    <h3>Article Title</h3>
-    <h4>Author</h4>
-    <time datetime="2018-05-22 20:00">Date</time>
+    <section>
+    <div class="trend-img"></div>
+    </section>
+  <section class="tablet">
+    <h4 class="category"><a>CATEGORY</a></h4>
+    <h3><a href="#">Article Title</a></h3>
+    <h4 class="author">Author</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</section>
   </article>
 
   <article>
-    <img src="images/placeholder.png" alt="image" width="400" height="300" class="shrink">
-    <h3>Article Title</h3>
-    <h4>Author</h4>
-    <time datetime="2018-05-22 20:00">Date</time>
+    <section>
+    <div class="trend-img"></div>
+    </section>
+  <section class="tablet">
+    <h4 class="category"><a>CATEGORY</a></h4>
+    <h3><a href="#">Article Title</a></h3>
+    <h4 class="author">Author</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</section>
   </article>
 </section>
 
@@ -145,47 +172,69 @@
 <section id="recent">
     <h2>Recent Articles</h2>
     <article>
-      <img src="images/placeholder.png" alt="image" width="600" height="400">
-      <h3>Article Title</h3>
-      <h4>Author</h4>
-      <time datetime="2018-05-22 20:00">Date</time>
+      <section>
+      <div class="recent-img"></div>
+      </section>
+    <section class="desktop">
+      <h4 class="category"><a>CATEGORY</a></h4>
+      <h3><a href="#">Article Title</a></h3>
+      <h4 class="author">Author</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </section>
     </article>
 
     <article>
-      <img src="images/placeholder.png" alt="image" width="600" height="400">
-      <h3>Article Title</h3>
-      <h4>Author</h4>
-      <time datetime="2018-05-22 20:00">Date</time>
+      <section>
+      <div class="recent-img"></div>
+      </section>
+    <section class="desktop">
+      <h4 class="category"><a>CATEGORY</a></h4>
+      <h3><a href="#">Article Title</a></h3>
+      <h4 class="author">Author</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    </article>
   </section>
+    </article>
   </section>
 
 <!-- Videos, Social, Subscribe -->
 <section id="aside">
     <article>
       <h2>Videos</h2>
-      <h3>Video 1</h3>
-        <img src="images/placeholder.png" alt="image" width="300" height="200">
-        <h3>Video 2</h3>
-          <img src="images/placeholder.png" alt="image" width="300" height="200">
-          <p><a href="#">More Videos</a></p>
+      <section class="videos">
+      <section>
+      <h3><a href="#">Video 1</a></h3>
+        <div class="videos-img"></div>
+      </section>
+      <section>
+        <h3><a href="#">Video 2</a></h3>
+          <div class="videos-img"></div>
+        </section>
+      </section>
+      <section class="videos">
+      <section>
+      <h3><a href="#">Video 3</a></h3>
+        <div class="videos-img"></div>
+      </section>
+      <section>
+        <h3><a href="#">Video 4</a></h3>
+          <div class="videos-img"></div>
+        </section>
+      </section>
+          <p class="more"><a href="#">More Videos</a></p>
     </article>
 
     <article>
       <h2>Social Media Feeds</h2>
-        <img src="images/placeholder.png" alt="image" width="300" height="50">
-          <img src="images/placeholder.png" alt="image" width="300" height="50">
-            <img src="images/placeholder.png" alt="image" width="300" height="50">
+        <div class="social-img"></div>
+        <div class="social-img"></div>
+        <div class="social-img"></div>
     </article>
 
     <article id="subscribe">
-      <h2>Subscribe</h2>
+      <h2>Join our Mailing List</h2>
     <form>
-     <label for="email">Subscribe For More</label> <br>
      <input type="text" name="email" id="email" required>
-     <input type="submit" value="Subscribe Now" class="button" id="submit">
+     <input type="submit" value="Subscribe" class="button" id="submit">
    </form>
 </article>
 </section>
@@ -193,6 +242,13 @@
 
 
 <footer>
+  <article id="subscribe2">
+    <h2>Join our Mailing List</h2>
+  <form>
+   <input type="text" name="email2" id="email2" required>
+   <input type="submit" value="Subscribe" class="button" id="submit2">
+ </form>
+</article>
 </footer>
 <script src="script.js"></script>
   </body>
