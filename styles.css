@@ -11,15 +11,20 @@ header, #mobileNav ul li {
 }
 
 /* Placeholder for Images and Articles */
-.trend-img, .recent-img, .videos-img, .top-img, .social-img, #division .recent-img, .post-img, .comment-img {
-    background-color: #adf1f7;
+.trend-img, .recent-img, .videos-img, .top-img, .social-img, #division .recent-img, .post-img, .comment-img, .vid-img {
+  background-color: #adf1f7;
 }
-.trend-img, .recent-img, .videos-img, .top-img, #division .recent-img, .post-img {
+
+.trend-img, .recent-img, .videos-img, .top-img, #division .recent-img, .post-img, .vid-img {
   padding: 8em;
 }
 
-.trend-img, .recent-img, .videos-img, #division .recent-img, .post-img {
+.trend-img, .recent-img, .videos-img, #division .recent-img, .post-img, .vid-img {
   margin-left: 0.5em;
+}
+
+.vid-img{
+  margin-bottom: 0.5em;
 }
 
 .social-img {
@@ -27,7 +32,7 @@ header, #mobileNav ul li {
   margin-bottom: 0.5em;
 }
 
-.comment-img{
+.comment-img {
   padding: 3em;
 }
 
@@ -217,8 +222,8 @@ article p, time {
 }
 
 /* ****** Subscribe ****** */
-#subscribe2{
-  display:none;
+#subscribe2 {
+  display: none;
 }
 
 #subscribe, #subscribe2 {
@@ -227,9 +232,10 @@ article p, time {
   padding: 1em;
 }
 
-#subscribe h2, #subscribe2 h2{
+#subscribe h2, #subscribe2 h2 {
   color: #FFF;
 }
+
 #subscribe h2 {
   font-size: 30px;
 }
@@ -251,91 +257,120 @@ input[type="text"], .button {
 }
 
 /* ******* Division Category Page/Sections ******** */
-#division-topstories .category, #division .category{
-  display:none;
+#division-topstories .category, #division .category {
+  display: none;
 }
 
-#division-topstories h3,#division h3,  #division-aside h3{
+#division-topstories h3, #division h3, #division-aside h3 {
   margin-top: 0.5em;
 }
 
-#division-heading h2{
+#division-heading h2 {
   font-size: 45px;
 }
 
-#division .more{
+#division .more {
   padding-left: 2em;
-  text-align:left;
+  text-align: left;
 }
 
-#division .more a{
+#division .more a {
   font-size: 30px;
 }
 
 /* ************** Single Post Article ****************** */
-#share-buttons{
+#share-buttons {
   margin-left: 1em;
   padding-bottom: 1em;
 }
 
-#share-buttons a{
+#share-buttons a {
   padding-right: 0.75em;
 }
-#post .category{
+
+#post .category {
   margin-top: 2em;
-  border:none;
+  border: none;
 }
 
-#post .category a{
+#post .category a {
   font-size: 50px;
 }
 
-#post h2{
+#post h2 {
   color: #000;
   font-size: 40px;
 }
 
-#post h4{
+#post h4 {
   font-size: 20px;
 }
 
-#post p{
+#post p {
   display: block;
 }
 
-#main-article h4 a{
+#main-article h4 a {
   text-decoration: none;
 }
 
 /* ******* Comment Section ******* */
-#comment-section h2{
-    border-top: 1px solid gray;
+#comment-section h2 {
+  border-top: 1px solid gray;
   color: #EAB442;
 }
 
-.comment-img{
+.comment-img {
   margin-left: 1em;
   width: 10%;
 }
 
-#comment-section section{
-  display:flex;
+#comment-section section {
+  display: flex;
 }
 
-#comment-section form{
+#comment-section form {
   margin-left: 1em;
 }
 
-#comment-section input[type="text"], textarea{
+#comment-section input[type="text"], textarea {
   background-color: lightgray;
 }
 
-textarea{
-  border:none;
+textarea {
+  border: none;
 }
 
-#comment-section .button{
+#comment-section .button {
   margin-left: 8.5em;
+}
+
+/* ********** Mobile Videos Section ********* */
+iframe{
+  width: 370px;
+  margin-bottom: 1em;
+}
+
+.video-title{
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #5CB7A1;
+  color: #FFF;
+  font-size: 33px;
+  line-height: 1.5em;
+}
+
+.singleVid{
+  text-decoration: none;
+  color: #BD1F1A;
+}
+
+.singleVid:hover{
+  color: #EAB442;
+}
+
+.singleVid h3{
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
 /* ***************************** For Tablets Screens *****************************/
@@ -467,7 +502,7 @@ textarea{
     padding-bottom: 1em;
   }
 
-  .trend-img, .recent-img, #division .recent-img  {
+  .trend-img, .recent-img, #division .recent-img {
     width: 40%;
   }
 
@@ -494,245 +529,291 @@ textarea{
     padding-right: 1em;
   }
 
-  #aside h3 a{
+  #aside h3 a {
     font-size: 25px;
   }
 
-/* **************** Single Article Post Tablet *****************/
-#main-article .post-img{
-  padding: 12em;
-}
-#soundcloud{
-  width: 100%;
-}
+  /* **************** Single Article Post Tablet *****************/
+  #main-article .post-img {
+    padding: 12em;
+  }
 
-#main-article #aside #subscribe{
-  display: block;
-}
+  #soundcloud {
+    width: 100%;
+  }
 
-#comment-section .button{
+  #main-article #aside #subscribe {
+    display: block;
+  }
+
+  #comment-section .button {
     margin: 0;
   }
+
+/* ********** Mobile Videos Section ********* */
+.vid-img{
+  padding: 10em 15em 10em 15em;
+}
+  .videos-flex{
+  display:flex;
 }
 
-  /* ***************************** For Desktop Screens *****************************/
-  @media only screen and (min-width: 1000px) {
-    body {
-      width: 100%;
-    }
-
-    nav h2, #nosubmenu a {
-      font-size: 30px;
-    }
-
-    /* ******************* Header ******************* */
-    h1 {
-      font-size: 50px;
-    }
-
-    /* ************** Desktop Navigation Layout *********** */
-    #logo {
-      display: block;
-      margin-left: -5em;
-      width: 20%;
-      height: 20%;
-    }
-
-    #hamburger {
-      padding-bottom: 20px;
-      margin-left: 30px;
-    }
-
-    /* ************ Navigation *************/
-    #megamenu {
-      border: 1px solid gray;
-      padding-left: 50px;
-      width: 95.4%;
-      z-index: 1000;
-    }
-
-    #mainnav {
-      margin-top: -90px;
-    }
-
-    #nosubmenu {
-      margin-left: 3em;
-      padding-right: 5em;
-    }
-
-    #report, #about, #contact {
-      margin-left: -8em;
-    }
-
-    #report {
-      padding-right: 2em;
-    }
-
-/* ************ Articles Layout ************* */
-#trending article, #recent article, .videos, #division article, #division-topstories article, #main-article #aside article {
-  display: block;
-}
-
-main{
-  display: flex;
-}
-
-#recent, #aside {
-  border: none;
-}
-
-.top-img{
-      padding: 13em;
-    }
-
-#trending, #division-topstories{
-  width: 20%;
-  padding: 0 9em 0 0;
-}
-
-.tablet{
-margin-left: 1em;
-width: 120%;
-}
-
-.recent-img{
-  width: 40%;
-  padding:13em;
-}
-
-.desktop{
+iframe{
   margin-left: 1em;
-  width: 87%;
+  width: 300px;
+  height: 250px;
 }
 
-/* **** Aside (Videos, Social, Subscribe) **** */
-.videos-img{
-  width: 55%;
-}
-#aside{
+.video-title{
   background-color: #FFF;
-  padding-right: 0.5em;
-  width: 30%;
+  color: #5CB7A1;
+  width: 60%;
+  border-bottom: 10px solid #5CB7A1;
+  font-size: 30px;
+  padding: 1em 0.25em 0.25em 0.5em;
 }
 
-#subscribe{
-  display: none;
-}
-
-#subscribe2{
-  padding: 5em;
-  display:block;
-  padding: 2em;
-}
-
-#subscribe2 h2 {
-  color: #FFF;
-  font-size: 50px;
-}
-
-input[type="text"] {
-  width: 20%;
-  padding: 0.5em
-}
-
-.button{
-  width: 10%;
+.singleVid h3{
   font-size: 20px;
-}
-
-  /* ************* Division Section Page *********** */
-#division-main{
-  margin-left: 1em;
-}
-
-#division-heading h2{
-  font-size: 55px;
-}
-
-#division .division-desktop{
-  display: flex;
-}
-
-#division .desktop{
-  margin-left: 7em;
-  padding-right: 1em;
-}
-
-#division{
-  width: 45%;
-}
-
- #division-aside .videos-img{
-  width: 40%;
-  margin: 0;
-}
-
-  /* ******** Single post Article ********* */
-#main-article #desktop-flex{
-  display: flex;
-}
-
-#main-article{
-  margin-left: 8em;
+  line-height: 1.5em;
   width: 80%;
 }
-
-#main-article #aside{
-  margin-top: 7em;
-  padding-left: 2em;
 }
 
-#main-article .recent-img{
-  padding: 8em;
-}
+/* ***************************** For Desktop Screens *****************************/
+@media only screen and (min-width: 1000px) {
+  body {
+    width: 100%;
+  }
 
+  nav h2, #nosubmenu a {
+    font-size: 30px;
+  }
 
-#main-article .post-img{
-  padding: 15em;
-}
+  /* ******************* Header ******************* */
+  h1 {
+    font-size: 50px;
+  }
 
-#main-article p{
-  line-height: 2em;
-}
+  /* ************** Desktop Navigation Layout *********** */
+  #logo {
+    display: block;
+    margin-left: -5em;
+    width: 20%;
+    height: 20%;
+  }
 
-#main-article #aside p{
-  display:none;
-}
+  #hamburger {
+    padding-bottom: 20px;
+    margin-left: 30px;
+  }
 
-#main-article #aside #subscribe{
-  width: 375px;
-}
+  /* ************ Navigation *************/
+  #megamenu {
+    border: 1px solid gray;
+    padding-left: 50px;
+    width: 95.4%;
+    z-index: 1000;
+  }
 
-#main-article #aside input[type="text"]{
-  padding-left: 5em;
-}
+  #mainnav {
+    margin-top: -90px;
+  }
 
-#main-article #aside .button{
+  #nosubmenu {
+    margin-left: 3em;
+    padding-right: 5em;
+  }
+
+  #report, #about, #contact {
+    margin-left: -8em;
+  }
+
+  #report {
+    padding-right: 2em;
+  }
+
+  /* ************ Articles Layout ************* */
+  #trending article, #recent article, .videos, #division article, #division-topstories article, #main-article #aside article {
+    display: block;
+  }
+
+  main {
+    display: flex;
+  }
+
+  #recent, #aside {
+    border: none;
+  }
+
+  .top-img {
+    padding: 13em;
+  }
+
+  #trending, #division-topstories {
+    width: 20%;
+    padding: 0 9em 0 0;
+  }
+
+  .tablet {
+    margin-left: 1em;
+    width: 120%;
+  }
+
+  .recent-img {
+    width: 40%;
+    padding: 13em;
+  }
+
+  .desktop {
+    margin-left: 1em;
+    width: 87%;
+  }
+
+  /* **** Aside (Videos, Social, Subscribe) **** */
+  .videos-img {
+    width: 55%;
+  }
+
+  #aside {
+    background-color: #FFF;
+    padding-right: 0.5em;
     width: 30%;
-}
+  }
 
-#comment-section form input[type="text"], textarea{
-  padding-right: 10em;
-}
+  #subscribe {
+    display: none;
+  }
 
-textarea{
-  padding-bottom: 5em;
-}
-#comment-section form .button{
-  width:30%;
-}
+  #subscribe2 {
+    padding: 5em;
+    display: block;
+    padding: 2em;
+  }
+
+  #subscribe2 h2 {
+    color: #FFF;
+    font-size: 50px;
+  }
+
+  input[type="text"] {
+    width: 20%;
+    padding: 0.5em
+  }
+
+  .button {
+    width: 10%;
+    font-size: 20px;
+  }
+
+  /* ************* Division Section Page *********** */
+  #division-main {
+    margin-left: 1em;
+  }
+
+  #division-heading h2 {
+    font-size: 55px;
+  }
+
+  #division .division-desktop {
+    display: flex;
+  }
+
+  #division .desktop {
+    margin-left: 7em;
+    padding-right: 1em;
+  }
+
+  #division {
+    width: 45%;
+  }
+
+  #division-aside .videos-img {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* ******** Single post Article ********* */
+  #main-article #desktop-flex {
+    display: flex;
+  }
+
+  #main-article {
+    margin-left: 8em;
+    width: 80%;
+  }
+
+  #main-article #aside {
+    margin-top: 7em;
+    padding-left: 2em;
+  }
+
+  #main-article .recent-img {
+    padding: 8em;
+  }
+
+  #main-article .post-img {
+    padding: 15em;
+  }
+
+  #main-article p {
+    line-height: 2em;
+  }
+
+  #main-article #aside p {
+    display: none;
+  }
+
+  #main-article #aside #subscribe {
+    width: 375px;
+  }
+
+  #main-article #aside input[type="text"] {
+    padding-left: 5em;
+  }
+
+  #main-article #aside .button {
+    width: 30%;
+  }
+
+  #comment-section form input[type="text"], textarea {
+    padding-right: 10em;
+  }
+
+  textarea {
+    padding-bottom: 5em;
+  }
+
+  #comment-section form .button {
+    width: 30%;
+  }
 
   /* ***** Share Buttons ****** */
-#share-buttons{
-  width: 75px;
-  position: fixed;
-  top: 17em;
-  left: 2em;
-}
-
-#share-buttons img{
-  width: 55px;
-  height: 55px;
-  padding-bottom: 0.5em;
-}
+  #share-buttons {
+    width: 75px;
+    position: fixed;
+    top: 17em;
+    left: 2em;
   }
+
+  #share-buttons img {
+    width: 55px;
+    height: 55px;
+    padding-bottom: 0.5em;
+  }
+
+  /* ********** Desktop Videos Section ********* */
+  iframe{
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+    width: 400px;
+    height: 250px;
+  }
+
+  .video-title{
+    width: 60%;
+    font-size: 40px;
+    padding: 1em 0.25em 0.25em 1em;
+  }
+
+}
