@@ -147,6 +147,42 @@ h1 {
   padding-top: 1.8em;
 }
 
+/* **************** Events Coming Soon ************** */
+#events{
+  display: none;
+  position: fixed;
+  top: 10em;
+  left: 2em;
+  background-color: #a1d6c5;
+  color: #29725c;
+  opacity: 0.9;
+  padding: 2.5em;
+  width: 200px;
+}
+
+#events h3{
+  font-size: 30px;
+  margin-left: -0.05em;
+}
+
+#events p {
+  text-align: center;
+  margin-top: -0.5em;
+  font-size: 16px;
+  line-height: 1.25em;
+  margin-left: -0.5em;
+}
+
+#okEvent{
+  background-color: #369679;
+  padding: 0.6em;
+  font-size: 18px;
+  width: 55px;
+  color: #FFF;
+  margin-left: 7em;
+  margin-top: 1em;
+
+}
 /* **************** Mobile Articles Layout ************** */
 section h2 {
   color: #318c75;
@@ -345,7 +381,25 @@ textarea {
   margin-left: 8.5em;
 }
 
+/* ********* Interview Section *************** */
+#interviews img{
+  margin-top: -1em;
+  width: 100%;
+}
+
+#interviews article {
+  padding: 0em 0em 1em 0.5em;
+}
+
+#vid-interview h3{
+  margin-top: -0.5em;
+}
+
 /* ********** Mobile Videos Section ********* */
+.backgroundColor{
+  background-color: #eaeaea;
+}
+
 iframe{
   width: 370px;
   margin-bottom: 1em;
@@ -369,10 +423,17 @@ iframe{
 }
 
 .singleVid h3{
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.5em;
 }
 
+#Featured-Video a{
+  text-decoration: none;
+}
+
+#videos-main section{
+  margin-top: 2.5em;
+}
 /* ***************************** For Tablets Screens *****************************/
 @media only screen and (min-width: 600px) {
   body {
@@ -519,6 +580,32 @@ iframe{
     font-size: 35px;
   }
 
+  /* ********* Interview Section *************** */
+#interviewSection .top-img{
+  width: 100%;
+}
+
+#interviews{
+  width: 80%;
+}
+
+  #interviews img{
+    margin-top: -1em;
+    width: 80%;
+  }
+
+  #interviews article {
+    padding: 0em 0em 1em 0.5em;
+  }
+
+#vid-interview {
+  margin-top: 4em;
+}
+
+#vid-interview h3{
+  margin-top: -1em;
+}
+
   /* ******* Videos *********/
   .videos section {
     width: 60%;
@@ -551,6 +638,9 @@ iframe{
   }
 
 /* ********** Mobile Videos Section ********* */
+#Featured-Video h2{
+  padding: 0.5em 0 1em 0.5em;
+}
 .vid-img{
   padding: 10em 15em 10em 15em;
 }
@@ -559,9 +649,20 @@ iframe{
 }
 
 iframe{
-  margin-left: 1em;
-  width: 300px;
-  height: 250px;
+  padding: 1em;
+  border:none;
+  width: 215px;
+  height: 165px;
+  margin-top: -3em;
+}
+
+.video-title2{
+  background-color: #eaeaea;
+  color: #5CB7A1;
+  width: 60%;
+  border-bottom: 10px solid #5CB7A1;
+  font-size: 30px;
+  padding: 1em 0.25em 0.25em 0.5em;
 }
 
 .video-title{
@@ -576,6 +677,25 @@ iframe{
 .singleVid h3{
   font-size: 20px;
   line-height: 1.5em;
+  width: 80%;
+  margin-top: -1.5em;
+}
+
+.featuredvid{
+  width: 725px;
+  height: 400px;
+}
+
+#bikepath3{
+  margin-left: 0.75em;
+}
+
+#bikepath1{
+  width: 30%;
+  padding-right: 2em;
+}
+
+#bikepathtrailer h3{
   width: 80%;
 }
 }
@@ -802,7 +922,7 @@ iframe{
     padding-bottom: 0.5em;
   }
 
-  /* ********** Desktop Videos Section ********* */
+    /* ********** Desktop Videos Section ********* */
   iframe{
     margin-left: 2.5em;
     margin-bottom: 1.5em;
@@ -810,10 +930,52 @@ iframe{
     height: 250px;
   }
 
-  .video-title{
+  .video-title, .video-title2{
     width: 60%;
     font-size: 40px;
     padding: 1em 0.25em 0.25em 1em;
   }
 
+  .featuredvid{
+    text-align: center;
+    width: 1250px;
+    height: 500px;
+  }
+
+  #Featured-Video h2{
+    font-size: 50px;
+    margin-left: 0.35em;
+  }
+
+  .singleVid h3{
+    font-size: 22px;
+    margin-left: 2.5em;
+  }
+
+#bikepath3 h3, #bikepath2 h3, #interview3 h3, #interview2 h3{
+  width: 55%;
+}
+
+#interview3{
+  padding-right: 2em;
+}
+
+#interview2{
+  margin-left: -11.5em;
+}
+
+ #interview1{
+   margin-left: -10em;
+ }
+
+  /* ********** Desktop Interview Section ********* */
+
+  #vid-interview {
+    margin-left: -2.5em;
+  }
+
+  #vid-interview h3{
+    width: 17em;
+    padding-bottom: 1em;
+  }
 }

@@ -15,6 +15,9 @@ var twitter = document.querySelector('#twitter');
 var instagram = document.querySelector('#insta');
 var email = document.querySelector('#mail');
 
+var events = document.querySelector('#eventClickMobile');
+var eventsOK = document.querySelector('#okEvent');
+
 // Mobile Navigation Click
 hamburger.addEventListener('click', function() {
   document.querySelector('#mobileNav').style.display = 'block';
@@ -84,4 +87,14 @@ email.addEventListener('mouseover', function() {
 
 email.addEventListener('mouseout', function() {
   document.getElementById('mail').src = "../media/email.png";
+});
+
+// Events Page Coming Soon
+
+events.addEventListener('click', function() {
+  document.querySelector('events').style.display = 'block';
+});
+
+eventsOK.addEventListener('mousedown', function() {
+  document.getElementById('events').style.display = 'none';
 });
